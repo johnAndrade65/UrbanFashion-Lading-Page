@@ -1,0 +1,135 @@
+/*==IMPORT==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+
+/*==GENERAL STYLIZATION==*/
+*{  
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==CONTAINER==*/
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 25px 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*==HEADER==*/
+.navbar{
+    width: 100%;
+    height: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+/*==LOGO==*/
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+/*==HEADER MENU==*/
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s;
+}
+nav ul li a:hover{
+    color: #007ef5;
+    border-bottom: 2px solid #007ef5;
+}
+/*==CART==*/
+.cart{
+    width: 40px;
+    cursor: pointer;
+}
+.cart:hover{
+    transform: scale(110%);
+    transition: 0.3s ease-in-out;
+}
+
+/*==MAIN CONTENT==*/
+.content{
+    margin: 12% 10% 0 10%;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+}
+.content .btn{
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+    transition: 0.3s ease-in-out;
+}
+.content .btn:hover{
+    position: relative;
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #3675ff, #fd2fb2);
+}
+
+/*==ARROWS==*/
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+/*==IMG WOMEN RIGHT==*/
+.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+/*==MENU LEFT==*/
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 240px;
+}
+.social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    padding-right: 20px;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+.social-links a:hover{
+    color: #007ef5;
+}
