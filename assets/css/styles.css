@@ -64,7 +64,13 @@ nav ul li a:hover{
     transform: scale(110%);
     transition: 0.3s ease-in-out;
 }
-
+.fa-bars{
+    font-size: 25px;
+    position: absolute;
+    right: 78px;
+    top: 22px;
+    opacity: 0;
+}
 /*==MAIN CONTENT==*/
 .content{
     margin: 12% 10% 0 10%;
@@ -132,4 +138,51 @@ nav ul li a:hover{
 }
 .social-links a:hover{
     color: #007ef5;
+}
+
+/*==MOBILE SCREEN ADJUSTMENT (STILL UNDER CONSTRUCTION)==*/
+@media (max-width:600px){
+    /*==HEADER MENU==*/
+    .fa-bars{
+        right: 40px;
+        top: 22px;
+        opacity: 100;
+    }
+    nav ul li a, .cart{
+        opacity: 0;
+    }
+
+    /*==MAIN CONTENT==*/
+    .content h1{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .content p{
+        font-size: 15px;
+        color: #6a7199;
+    }
+    .content .btn{
+        margin-top: 5px;
+        padding: 5px 15px;
+        font-size: 15px;
+        box-sizing: border-box;
+        box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+        transition: 0.3s ease-in-out;
+    }
+    
+    /*==IMG WOMEN RIGHT==*/
+    .feature-img{
+        height: 40%;
+        position: absolute;
+        right: 250px;
+        right: 0px;
+    }
+
+    /*==MENU LEFT==*/
+    .social-links a{
+        padding-right: 20px;
+        font-size: 8px;
+        transition: all 0.3s;
+    }
 }
