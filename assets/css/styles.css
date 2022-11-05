@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
 }
 
 /*==CONTAINER==*/
@@ -21,6 +20,7 @@
     padding: 25px 5%;
     box-sizing: border-box;
     position: relative;
+    overflow-x: hidden;
 }
 
 /*==HEADER==*/
